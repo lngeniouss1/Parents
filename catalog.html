@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Родительский гид - Каталог</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Родительский гид</div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="catalog.html" class="nav-link active">Каталог</a>
+                <a href="advice.html" class="nav-link">Советы</a>
+                <a href="about.html" class="nav-link">О нас</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="catalog">
+        <div class="container">
+            <h1>Каталог товаров для детей</h1>
+            
+            <!-- Поиск и сортировка -->
+            <div class="catalog-controls">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Поиск товаров...">
+                    <button class="search-btn">Найти</button>
+                </div>
+                <div class="sort-options">
+                    <label for="sort-select">Сортировать по:</label>
+                    <select id="sort-select">
+                        <option value="price-asc">Цене (по возрастанию)</option>
+                        <option value="price-desc">Цене (по убыванию)</option>
+                        <option value="rating">Рейтингу</option>
+                        <option value="name">Названию</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Список товаров -->
+            <div class="product-list">
+                <div class="product-card" data-category="baby" data-price="4500" data-rating="4.5">
+                    <img src="https://via.placeholder.com/300x200?text=Детская+коляска" alt="Детская коляска">
+                    <h3>Детская коляска ABC Premium</h3>
+                    <div class="product-info">
+                        <span class="price">4 500 ₽</span>
+                        <span class="rating">★ 4.5</span>
+                    </div>
+                    <p class="product-description">Универсальная коляска 2 в 1 с удобной системой складывания.</p>
+                    <button class="btn">В корзину</button>
+                </div>
+                
+                <div class="product-card" data-category="toys" data-price="1200" data-rating="4.8">
+                    <img src="https://via.placeholder.com/300x200?text=Развивающая+игрушка" alt="Развивающая игрушка">
+                    <h3>Развивающий куб "Умный малыш"</h3>
+                    <div class="product-info">
+                        <span class="price">1 200 ₽</span>
+                        <span class="rating">★ 4.8</span>
+                    </div>
+                    <p class="product-description">Многофункциональная игрушка для развития мелкой моторики.</p>
+                    <button class="btn">В корзину</button>
+                </div>
+                
+                <div class="product-card" data-category="furniture" data-price="8900" data-rating="4.2">
+                    <img src="https://via.placeholder.com/300x200?text=Детская+кроватка" alt="Детская кроватка">
+                    <h3>Детская кроватка "Соня"</h3>
+                    <div class="product-info">
+                        <span class="price">8 900 ₽</span>
+                        <span class="rating">★ 4.2</span>
+                    </div>
+                    <p class="product-description">Экологичная кроватка из массива дерева с регулируемым дном.</p>
+                    <button class="btn">В корзину</button>
+                </div>
+                
+                <div class="product-card" data-category="feeding" data-price="650" data-rating="4.7">
+                    <img src="https://via.placeholder.com/300x200?text=Набор+бутылочек" alt="Набор бутылочек">
+                    <h3>Набор бутылочек для кормления (3 шт.)</h3>
+                    <div class="product-info">
+                        <span class="price">650 ₽</span>
+                        <span class="rating">★ 4.7</span>
+                    </div>
+                    <p class="product-description">Антиколиковые бутылочки с удобной соской, 250 мл.</p>
+                    <button class="btn">В корзину</button>
+                </div>
+                
+                <div class="product-card" data-category="toys" data-price="2300" data-rating="4.9">
+                    <img src="https://via.placeholder.com/300x200?text=Конструктор" alt="Детский конструктор">
+                    <h3>Конструктор "Юный инженер" (120 деталей)</h3>
+                    <div class="product-info">
+                        <span class="price">2 300 ₽</span>
+                        <span class="rating">★ 4.9</span>
+                    </div>
+                    <p class="product-description">Развивающий конструктор для детей от 3 лет.</p>
+                    <button class="btn">В корзину</button>
+                </div>
+                
+                <div class="product-card" data-category="baby" data-price="3200" data-rating="4.3">
+                    <img src="https://via.placeholder.com/300x200?text=Автокресло" alt="Детское автокресло">
+                    <h3>Автокресло BabySafe 0-18 кг</h3>
+                    <div class="product-info">
+                        <span class="price">3 200 ₽</span>
+                        <span class="rating">★ 4.3</span>
+                    </div>
+                    <p class="product-description">Безопасное автокресло с системой Isofix, группа 0+/1.</p>
+                    <button class="btn">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 Родительский гид. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
