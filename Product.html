@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детская коляска ABC Premium | Родительский гид</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-child"></i> Родительский гид
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="catalog.html" class="nav-link">Каталог</a>
+                <a href="advice.html" class="nav-link">Советы</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="cart-link"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="product-page">
+        <div class="container">
+            <!-- Хлебные крошки -->
+            <nav class="breadcrumbs">
+                <a href="index.html">Главная</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="catalog.html">Каталог</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="catalog.html?category=baby">Для малышей</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Детская коляска ABC Premium</span>
+            </nav>
+
+            <!-- Основной блок товара -->
+            <div class="product-main">
+                <!-- Галерея -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="коляска беж 1.png" alt="Детская коляска ABC Premium" id="mainImage">
+                        <button class="zoom-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                    <div class="thumbnails">
+                        <div class="thumbnail active" onclick="changeImage('images/stroller-main.jpg')">
+                            <img src="коляска беж 1.png" alt="Коляска вид сбоку">
+                        </div>
+                        <div class="thumbnail" onclick="changeImage('images/stroller-main2.jpg')">
+                            <img src="коляска беж 2.png" alt="Коляска вид спереди">
+                        </div>
+                        <div class="thumbnail" onclick="changeImage('images/stroller-main3.jpg')">
+                            <img src="коляска беж 3.png" alt="Коляска в сложенном виде">
+                        </div>
+                        <div class="thumbnail" onclick="changeImage('images/stroller-main4.jpg')">
+                            <img src="коляска беж 4.png" alt="Коляска с аксессуарами">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Информация о товаре -->
+                <div class="product-info">
+                    <h1>Детская коляска ABC Premium</h1>
+                    
+                    <div class="product-meta">
+                        <div class="rating-badge">
+                            <i class="fas fa-star"></i> 4.5
+                            <span class="reviews-count">(12 отзывов)</span>
+                        </div>
+                        <div class="availability in-stock">
+                            <i class="fas fa-check-circle"></i> В наличии
+                        </div>
+                        <div class="product-code">Арт.: ST-2023-456</div>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="current-price">12 990 ₽</div>
+                        <div class="old-price">15 500 ₽</div>
+                        <div class="discount-badge">-16%</div>
+                    </div>
+
+                    <div class="color-selector">
+                        <h3>Цвет:</h3>
+                        <div class="color-options">
+                            <div class="color-option active" style="background-color: #a8a8a8;" data-color="Серый"></div>
+                            <div class="color-option" style="background-color: #f5deb3;" data-color="Бежевый"></div>
+                            <div class="color-option" style="background-color: #4682b4;" data-color="Голубой"></div>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1" min="1">
+                            <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-primary btn-add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Добавить в корзину
+                        </button>
+                        <button class="btn btn-secondary btn-wishlist">
+                            <i class="far fa-heart"></i> В избранное
+                        </button>
+                    </div>
+
+                    <div class="delivery-info">
+                        <div class="delivery-item">
+                            <i class="fas fa-truck"></i>
+                            <div>
+                                <strong>Бесплатная доставка</strong>
+                                <p>по Москве завтра</p>
+                            </div>
+                        </div>
+                        <div class="delivery-item">
+                            <i class="fas fa-store"></i>
+                            <div>
+                                <strong>Самовывоз</strong>
+                                <p>из 5 магазинов сегодня</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-share">
+                        <span>Поделиться:</span>
+                        <a href="#" class="social-share"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-share"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-share"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Детали товара -->
+            <div class="product-details">
+                <div class="details-tabs">
+                    <button class="tab-btn active" data-tab="description">Описание</button>
+                    <button class="tab-btn" data-tab="specs">Характеристики</button>
+                    <button class="tab-btn" data-tab="reviews">Отзывы (12)</button>
+                    <button class="tab-btn" data-tab="accessories">Аксессуары</button>
+                </div>
+
+                <div class="tab-content active" id="description">
+                    <h2><i class="fas fa-align-left"></i> Описание товара</h2>
+                    <div class="description-content">
+                        <p>Универсальная коляска 2 в 1 ABC Premium - это идеальное решение для современных родителей, которые ценят комфорт, безопасность и стиль. Модель сочетает в себе прогулочный блок и люльку для новорожденных, что позволяет использовать ее с первых дней жизни малыша.</p>
+                        
+                        <div class="features-grid">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <h3>Комфорт для ребенка</h3>
+                                <p>Мягкое спальное место, регулируемая спинка, вентилируемый капюшон</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <h3>Удобство для родителей</h3>
+                                <p>Легкое управление, регулируемая ручка, большая корзина для покупок</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <h3>Безопасность</h3>
+                                <p>Прочная рама, 5-точечные ремни безопасности, надежные тормоза</p>
+                            </div>
+                        </div>
+
+                        <h3>Комплектация:</h3>
+                        <ul class="package-list">
+                            <li><i class="fas fa-check"></i> Прогулочный блок</li>
+                            <li><i class="fas fa-check"></i> Люлька для новорожденных</li>
+                            <li><i class="fas fa-check"></i> Дождевик</li>
+                            <li><i class="fas fa-check"></i> Москитная сетка</li>
+                            <li><i class="fas fa-check"></i> Сумка для хранения</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="specs">
+                    <h2><i class="fas fa-list-alt"></i> Технические характеристики</h2>
+                    <div class="specs-grid">
+                        <div class="specs-category">
+                            <h3>Основные</h3>
+                            <table>
+                                <tr>
+                                    <td>Тип коляски</td>
+                                    <td>2 в 1 (прогулочная + люлька)</td>
+                                </tr>
+                                <tr>
+                                    <td>Возраст</td>
+                                    <td>0-36 месяцев</td>
+                                </tr>
+                                <tr>
+                                    <td>Вес коляски</td>
+                                    <td>12.5 кг</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="specs-category">
+                            <h3>Размеры</h3>
+                            <table>
+                                <tr>
+                                    <td>Габариты (Д×Ш×В)</td>
+                                    <td>85×58×105 см</td>
+                                </tr>
+                                <tr>
+                                    <td>Вес ребенка</td>
+                                    <td>до 22 кг</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="specs-category">
+                            <h3>Конструкция</h3>
+                            <table>
+                                <tr>
+                                    <td>Колеса</td>
+                                    <td>4 надувных, передние поворотные</td>
+                                </tr>
+                                <tr>
+                                    <td>Материал рамы</td>
+                                    <td>Алюминиевый сплав</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="reviews">
+                    <h2><i class="fas fa-star"></i> Отзывы покупателей</h2>
+                    
+                    <div class="reviews-header">
+                        <div class="rating-summary">
+                            <div class="average-rating">4.5</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="total-reviews">12 отзывов</div>
+                        </div>
+                        <button class="btn btn-primary btn-add-review">
+                            <i class="fas fa-pen"></i> Написать отзыв
+                        </button>
+                    </div>
+
+                    <div class="reviews-list">
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="review-author">Анна К.</div>
+                                <div class="review-date">15.05.2023</div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <h3>Отличная коляска!</h3>
+                                <p>Пользуемся уже 8 месяцев, очень довольны! Коляска легкая в управлении, хорошо складывается, ребенок чувствует себя комфортно. Качество материалов на высоте, ничего не отклеивается и не ломается. Рекомендую!</p>
+                            </div>
+                        </div>
+
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="review-author">Михаил С.</div>
+                                <div class="review-date">02.04.2023</div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <h3>Хорошая, но есть нюансы</h3>
+                                <p>В целом коляска хорошая, но корзина могла бы быть побольше. В дождь капюшон не совсем защищает от воды. За эти деньги ожидал немного большего. Но в целом - качественная вещь.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-more-reviews">
+                        Показать еще отзывы
+                    </button>
+                </div>
+
+                <div class="tab-content" id="accessories">
+                    <h2><i class="fas fa-puzzle-piece"></i> Рекомендуемые аксессуары</h2>
+                    <div class="accessories-grid">
+                        <div class="accessory-card">
+                            <img src="дождевик.png" alt="Дождевик для коляски">
+                            <h3>Дождевик для коляски</h3>
+                            <div class="price">890 ₽</div>
+                            <button class="btn btn-sm">Добавить</button>
+                        </div>
+                        <div class="accessory-card">
+                            <img src="сумка.png" alt="Сумка для коляски">
+                            <h3>Сумка для коляски</h3>
+                            <div class="price">1 290 ₽</div>
+                            <button class="btn btn-sm">Добавить</button>
+                        </div>
+                        <div class="accessory-card">
+                            <img src="МУФТА.png" alt="Муфта для ручки">
+                            <h3>Муфта для ручки</h3>
+                            <div class="price">650 ₽</div>
+                            <button class="btn btn-sm">Добавить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Похожие товары -->
+            <section class="related-products">
+                <h2><i class="fas fa-random"></i> Похожие товары</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-badge">Новинка</div>
+                        <img src="Коляска похожие .png" alt="Коляска Travel Comfort">
+                        <div class="product-info">
+                            <h3><a href="product.html">Коляска Travel Comfort</a></h3>
+                            <div class="price-block">
+                                <span class="current-price">10 490 ₽</span>
+                                <span class="old-price">12 990 ₽</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.0 (8)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn quick-view">Быстрый просмотр</button>
+                        <button class="btn btn-cart">В корзину</button>
+                    </div>
+                    
+                    <!-- Еще 2 аналогичных карточки -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Футер остается таким же -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

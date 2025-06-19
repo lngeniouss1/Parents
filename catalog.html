@@ -14,7 +14,7 @@
                 <a href="index.html" class="nav-link">Главная</a>
                 <a href="catalog.html" class="nav-link active">Каталог</a>
                 <a href="advice.html" class="nav-link">Советы</a>
-                <a href="about.html" class="nav-link">О нас</a>
+                <a href="Contacts.html" class="nav-link">Контакты</a>
             </nav>
         </div>
     </header>
@@ -41,20 +41,32 @@
             </div>
             
             <!-- Список товаров -->
-            <div class="product-list">
-                <div class="product-card" data-category="baby" data-price="4500" data-rating="4.5">
-                    <img src="https://via.placeholder.com/300x200?text=Детская+коляска" alt="Детская коляска">
-                    <h3>Детская коляска ABC Premium</h3>
-                    <div class="product-info">
-                        <span class="price">4 500 ₽</span>
-                        <span class="rating">★ 4.5</span>
-                    </div>
-                    <p class="product-description">Универсальная коляска 2 в 1 с удобной системой складывания.</p>
-                    <button class="btn">В корзину</button>
-                </div>
+           <div class="product-card" data-id="stroller-abc-premium">
+    <div class="product-badge">Хит</div>
+    <img src="коляска беж 1.png" alt="Детская коляска ABC Premium">
+    <div class="product-info">
+        <h3><a href="product.html?id=stroller-abc-premium" class="product-link">Детская коляска ABC Premium</a></h3>
+        <div class="price-block">
+            <span class="current-price">12 990 ₽</span>
+            <span class="old-price">15 500 ₽</span>
+        </div>
+        <div class="product-rating">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>4.5 (12)</span>
+            </div>
+        </div>
+    </div>
+    <button class="btn quick-view" data-id="stroller-abc-premium">Быстрый просмотр</button>
+    <button class="btn btn-cart">В корзину</button>
+</div>
                 
                 <div class="product-card" data-category="toys" data-price="1200" data-rating="4.8">
-                    <img src="https://via.placeholder.com/300x200?text=Развивающая+игрушка" alt="Развивающая игрушка">
+                    <img src="куб.png" alt="Развивающая игрушка">
                     <h3>Развивающий куб "Умный малыш"</h3>
                     <div class="product-info">
                         <span class="price">1 200 ₽</span>
@@ -65,7 +77,7 @@
                 </div>
                 
                 <div class="product-card" data-category="furniture" data-price="8900" data-rating="4.2">
-                    <img src="https://via.placeholder.com/300x200?text=Детская+кроватка" alt="Детская кроватка">
+                    <img src="Кроватка.png" alt="Детская кроватка">
                     <h3>Детская кроватка "Соня"</h3>
                     <div class="product-info">
                         <span class="price">8 900 ₽</span>
@@ -76,7 +88,7 @@
                 </div>
                 
                 <div class="product-card" data-category="feeding" data-price="650" data-rating="4.7">
-                    <img src="https://via.placeholder.com/300x200?text=Набор+бутылочек" alt="Набор бутылочек">
+                    <img src="Бутылочки.png" alt="Набор бутылочек">
                     <h3>Набор бутылочек для кормления (3 шт.)</h3>
                     <div class="product-info">
                         <span class="price">650 ₽</span>
@@ -87,7 +99,7 @@
                 </div>
                 
                 <div class="product-card" data-category="toys" data-price="2300" data-rating="4.9">
-                    <img src="https://via.placeholder.com/300x200?text=Конструктор" alt="Детский конструктор">
+                    <img src="игрушка.png" alt="Детский конструктор">
                     <h3>Конструктор "Юный инженер" (120 деталей)</h3>
                     <div class="product-info">
                         <span class="price">2 300 ₽</span>
@@ -111,9 +123,39 @@
         </div>
     </main>
 
-    <footer class="footer">
+     <footer class="footer">
         <div class="container">
-            <p>© 2023 Родительский гид. Все права защищены.</p>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Родительский гид</h3>
+                    <p>Помогаем родителям в воспитании и развитии детей с 2010 года.</p>
+                    <div class="footer-social">
+                        <a href="https://vk.com/roditelgid" target="_blank" rel="noopener noreferrer"><i class="fab fa-vk"></i></a>
+                        <a href="https://t.me/roditelgid" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.instagram.com/roditelgid/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="advice.html">Советы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +7 (123) 456-78-90</li>
+                        <li><i class="fas fa-envelope"></i> info@roditel-gid.ru</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Родительская, 15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Родительский гид.</p>
+            </div>
         </div>
     </footer>
 

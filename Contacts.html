@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Родительский гид</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-child"></i> Родительский гид
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="catalog.html" class="nav-link">Каталог</a>
+                <a href="advice.html" class="nav-link">Советы</a>
+                <a href="contacts.html" class="nav-link active">Контакты</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="cart-link"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="contacts-page">
+        <div class="container">
+            <h1 class="page-title">Свяжитесь с нами</h1>
+            
+            <div class="contacts-grid">
+                <!-- Форма обратной связи -->
+                <section class="contact-form-section">
+                    <h2><i class="fas fa-envelope"></i> Форма обратной связи</h2>
+                    <form id="feedbackForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" name="name" required placeholder="Иванова Анна">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Тема сообщения *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Выберите тему</option>
+                                <option value="question">Вопрос по товарам</option>
+                                <option value="order">Вопрос по заказу</option>
+                                <option value="cooperation">Сотрудничество</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Ваше сообщение *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Напишите ваше сообщение здесь..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="agreement" name="agreement" required>
+                            <label for="agreement">Я согласен на обработку персональных данных</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Отправить сообщение
+                        </button>
+                    </form>
+                </section>
+                
+                <!-- Контактная информация -->
+                <section class="contact-info-section">
+                    <h2><i class="fas fa-info-circle"></i> Наши контакты</h2>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Адрес</h3>
+                                <p>г. Москва, ул. Родительская, д. 15, офис 42</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Телефоны</h3>
+                                <p><a href="tel:+71234567890">+7 (123) 456-78-90</a></p>
+                                <p><a href="tel:+79876543210">+7 (987) 654-32-10</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@roditel-gid.ru">info@roditel-gid.ru</a></p>
+                                <p><a href="mailto:support@roditel-gid.ru">support@roditel-gid.ru</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Часы работы</h3>
+                                <p>Пн-Пт: 9:00 - 20:00</p>
+                                <p>Сб-Вс: 10:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Мы в социальных сетях</h3>
+                        <div class="social-icons">
+                            <a href="https://vk.com/roditelgid" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="https://t.me/roditelgid" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://www.instagram.com/roditelgid/" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/roditelgid" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.youtube.com/roditelgid" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <!-- Карта -->
+            <section class="map-section">
+                <h2><i class="fas fa-map-marked-alt"></i> Как нас найти</h2>
+                <div class="map-container">
+                    <img src="Карта.png" alt="Карта проезда к офису Родительский гид" class="map-image">
+                    <div class="map-overlay">
+                        <a href="https://yandex.ru/maps/?text=г.+Москва,+ул.+Родительская,+д.+15" target="_blank" rel="noopener noreferrer" class="btn btn-map">
+                            <i class="fas fa-external-link-alt"></i> Открыть в Яндекс.Картах
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- FAQ -->
+            <section class="faq-section">
+                <h2><i class="fas fa-question-circle"></i> Часто задаваемые вопросы</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Как сделать заказ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Вы можете сделать заказ через наш сайт, добавив товары в корзину и оформив заказ, или позвонив по телефону +7 (123) 456-78-90. Наши менеджеры помогут вам с выбором и оформлением.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Какие способы оплаты вы принимаете?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы принимаем наличные при получении, банковские карты (Visa, Mastercard, Мир), а также безналичный расчет для юридических лиц.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Есть ли у вас доставка в регионы?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы осуществляем доставку по всей России через транспортные компании. Стоимость и сроки доставки рассчитываются индивидуально.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Можно ли вернуть товар?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, в соответствии с законом о защите прав потребителей, вы можете вернуть товар надлежащего качества в течение 14 дней с момента покупки при сохранении товарного вида и упаковки.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Родительский гид</h3>
+                    <p>Помогаем родителям в воспитании и развитии детей с 2010 года.</p>
+                    <div class="footer-social">
+                        <a href="https://vk.com/roditelgid" target="_blank" rel="noopener noreferrer"><i class="fab fa-vk"></i></a>
+                        <a href="https://t.me/roditelgid" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.instagram.com/roditelgid/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="advice.html">Советы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +7 (123) 456-78-90</li>
+                        <li><i class="fas fa-envelope"></i> info@roditel-gid.ru</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Родительская, 15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Родительский гид.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Обработка формы обратной связи
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Здесь можно добавить AJAX-отправку формы
+            // Для примера просто покажем сообщение об успехе
+            alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
+            this.reset();
+        });
+
+        // Раскрытие/закрытие FAQ
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                answer.classList.toggle('active');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+    </script>
+</body>
+</html>
