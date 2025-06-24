@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Родительский гид</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Родительский гид</div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="catalog.html" class="nav-link active">Каталог</a>
+                <a href="advice.html" class="nav-link">Советы</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog">
+            <div class="container">
+                <h1>Каталог товаров для детей</h1>
+                <div class="catalog-controls">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Поиск...">
+                        <button class="search-btn">Найти</button>
+                    </div>
+                    <div class="sort-options">
+                        <label for="category-select">Фильтр по категории:</label>
+                        <select id="category-select">
+                            <option value="all">Все</option>
+                            <option value="stroller">Коляски</option>
+                            <option value="toy">Игрушки</option>
+                            <option value="bed">Кроватки</option>
+                            <option value="feeding">Кормление</option>
+                            <option value="carseat">Автокресла</option>
+                        </select>
+                    </div>
+                    <div class="sort-options">
+                        <label for="sort-select">Сортировать по:</label>
+                        <select id="sort-select">
+                            <option value="price-asc">Цене (по возрастанию)</option>
+                            <option value="price-desc">Цене (по убыванию)</option>
+                            <option value="rating">Рейтингу</option>
+                            <option value="name">Названию</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-list">
+                    <div class="product-card" data-category="stroller">
+                        <span class="label-hit">Хит</span>
+                        <img src="коляска беж 1.png" alt="Детская коляска ABC Premium">
+                        <div class="product-info">
+                            <h3><a href="product.html?id=stroller-abc-premium" class="product-link">Детская коляска ABC Premium</a></h3>
+                            <div class="price-block">
+                                <span class="current-price">12 990 ₽</span>
+                                <span class="old-price">15 500 ₽</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.5 (12)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn quick-view" data-id="stroller-abc-premium">Быстрый просмотр</a>
+                            <button class="btn btn-cart btn-add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="toy">
+                        <img src="куб.png" alt="Развивающий куб Умный малыш">
+                        <div class="product-info">
+                            <h3><a href="product.html?id=cube-smart-baby" class="product-link">Развивающий куб "Умный малыш"</a></h3>
+                            <div class="price-block">
+                                <span class="current-price">1 200 ₽</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating">★ 4.8</span>
+                                </div>
+                            </div>
+                            <p class="product-description">Многофункциональная игрушка для развития мелкой моторики.</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart btn-add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="bed">
+                        <img src="Кроватка.png" alt="Детская кроватка Соня">
+                        <div class="product-info">
+                            <h3><a href="product.html?id=bed-sonya" class="product-link">Детская кроватка "Соня"</a></h3>
+                            <div class="price-block">
+                                <span class="current-price">8 900 ₽</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="rating">★ 4.2</span>
+                                </div>
+                            </div>
+                            <p class="product-description">Экологичная кроватка из массива дерева с регулируемым дном.</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart btn-add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="feeding">
+                        <img src="Бутылочки.png" alt="Набор бутылочек для кормления">
+                        <div class="product-info">
+                            <h3><a href="product.html?id=bottles-set" class="product-link">Набор бутылочек для кормления (3 шт.)</a></h3>
+                            <div class="price-block">
+                                <span class="current-price">650 ₽</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating">★ 4.7</span>
+                                </div>
+                            </div>
+                            <p class="product-description">Антиколиковые бутылочки с удобной соской, 250 мл.</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart btn-add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="toy">
+                        <img src="игрушка.png" alt="Конструктор Юный инженер">
+                        <div class="product-info">
+                            <h3><a href="product.html?id=constructor-engineer" class="product-link">Конструктор "Юный инженер" (120 деталей)</a></h3>
+                            <div class="price-block">
+                                <span class="current-price">2 300 ₽</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating">★ 4.9</span>
+                                </div>
+                            </div>
+                            <p class="product-description">Развивающий конструктор для детей от 3 лет.</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart btn-add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="carseat">
+                        <img src="дождевик.png" alt="Автокресло BabySafe">
+                        <div class="product-info">
+                            <h3><a href="product.html?id=carseat-babysafe" class="product-link">Автокресло BabySafe 0-18 кг</a></h3>
+                            <div class="price-block">
+                                <span class="current-price">3 200 ₽</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="rating">★ 4.3</span>
+                                </div>
+                            </div>
+                            <p class="product-description">Безопасное автокресло с системой Isofix, группа 0+/1.</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart btn-add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Родительский гид</h3>
+                    <p>Помогаем родителям в воспитании и развитии детей с 2010 года.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="tips.html">Советы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-phone"></i> +7 (123) 456-78-90</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@parentguide.ru">info@parentguide.ru</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Родительская, 15</p>
+                </div>
+            </div>
+            <p class="footer-bottom">© 2025 Родительский гид.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
